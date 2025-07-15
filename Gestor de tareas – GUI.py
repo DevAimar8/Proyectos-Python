@@ -1,5 +1,3 @@
-# 📌 GESTOR DE TAREAS COMPLETO CON KANBAN, IMPORTANCIA, TIEMPO Y TEMA DINÁMICO
-
 import tkinter as tk
 from tkinter import messagebox, ttk, filedialog
 from plyer import notification
