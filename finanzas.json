@@ -1,0 +1,14 @@
+[
+    {
+        "tipo": "Egreso",
+        "categoria": "Comida",
+        "monto": 25.0,
+        "fecha": "2025-07-15"
+    },
+    {
+        "tipo": "Ingreso",
+        "categoria": "Otros",
+        "monto": 200.0,
+        "fecha": "2025-07-15"
+    }
+]
