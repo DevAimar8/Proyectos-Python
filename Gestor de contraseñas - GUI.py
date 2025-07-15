@@ -1,5 +1,3 @@
-# 🔐 Gestor de Contraseñas Avanzado con GUI (Tkinter)
-
 import tkinter as tk
 from tkinter import ttk, messagebox
 import json
