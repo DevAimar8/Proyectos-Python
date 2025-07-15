@@ -1,5 +1,3 @@
-# 💰 Gestor de Finanzas Personales con Tkinter y Matplotlib
-
 import tkinter as tk
 from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
