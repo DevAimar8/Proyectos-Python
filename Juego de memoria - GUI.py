@@ -1,5 +1,3 @@
-# 🎮 Juego de Memoria / Memory Match con Tkinter
-
 import tkinter as tk
 import random
 import time
