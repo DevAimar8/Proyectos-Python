@@ -28,7 +28,7 @@ def reiniciar():
     global numero_secreto, intentos
     numero_secreto = random.randint(1, 100)
     intentos = 0
-    mensaje.set("🔢 Adivina un número del 1 al 100")
+    mensaje.set("Adivina un número del 1 al 100")
     entry.config(state="normal")
     boton_verificar.config(state="normal")
     entry.delete(0, tk.END)
