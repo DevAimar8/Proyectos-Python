@@ -70,7 +70,7 @@ def mostrar_grafico():
 
 # ---------------- INTERFAZ ----------------
 root = tk.Tk()
-root.title("💰 Gestor de Finanzas Personales")
+root.title("Gestor de Finanzas Personales")
 root.geometry("750x600")
 root.configure(bg="#2e2e2e")
 
@@ -91,7 +91,7 @@ tk.OptionMenu(frame_form, categoria_var, *categorias).grid(row=0, column=3)
 tk.Label(frame_form, text="Monto:", bg="#2e2e2e", fg="white").grid(row=0, column=4)
 tk.Entry(frame_form, textvariable=monto_var).grid(row=0, column=5)
 
-tk.Button(root, text="➕ Agregar Movimiento", bg="#4caf50", fg="white", command=agregar_movimiento).pack(pady=10)
+tk.Button(root, text="Agregar Movimiento", bg="#4caf50", fg="white", command=agregar_movimiento).pack(pady=10)
 
 # Tabla
 cols = ("Fecha", "Tipo", "Categoría", "Monto")
@@ -105,7 +105,7 @@ lista.pack(pady=10, fill="both", expand=True)
 saldo_label = tk.Label(root, text="Saldo total: $0.00", font=("Arial", 14), bg="#2e2e2e", fg="white")
 saldo_label.pack(pady=10)
 
-tk.Button(root, text="📊 Mostrar Gráfico de Egresos", command=mostrar_grafico, bg="#2196f3", fg="white").pack()
+tk.Button(root, text="Mostrar Gráfico de Egresos", command=mostrar_grafico, bg="#2196f3", fg="white").pack()
 
 # Iniciar
 finanzas = cargar_datos()
