@@ -121,7 +121,7 @@ def aplicar_tema():
 
 # ---------------- INTERFAZ ----------------
 root = tk.Tk()
-root.title("📝 Kanban Gestor de Tareas")
+root.title("Kanban Gestor de Tareas")
 root.geometry("1080x700")
 
 # Entrada tarea
