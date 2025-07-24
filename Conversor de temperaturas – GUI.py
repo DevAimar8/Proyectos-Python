@@ -14,9 +14,9 @@ def convertir():
             resultado = (temp - 32) * 5/9
             resultado_var.set(f"{resultado:.2f} °C")
         else:
-            resultado_var.set("❌ Selecciona un modo válido.")
+            resultado_var.set("Selecciona un modo válido.")
     except ValueError:
-        resultado_var.set("⚠️ Ingresa un número válido.")
+        resultado_var.set("⚠ Ingresa un número válido.")
 
 # Interfaz principal
 root = tk.Tk()
@@ -26,7 +26,7 @@ root.configure(bg="#2e2e2e")
 root.resizable(False, False)
 
 # Título
-tk.Label(root, text="🌡️ Conversor de Temperatura", font=("Arial", 18, "bold"), bg="#2e2e2e", fg="white").pack(pady=20)
+tk.Label(root, text="Conversor de Temperatura", font=("Arial", 18, "bold"), bg="#2e2e2e", fg="white").pack(pady=20)
 
 # Entrada
 entry = tk.Entry(root, font=("Arial", 16), justify="center", width=10, bd=0, bg="#1e1e1e", fg="white")
