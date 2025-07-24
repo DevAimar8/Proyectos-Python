@@ -5,7 +5,7 @@ import time
 class MemoryGame:
     def __init__(self, root):
         self.root = root
-        self.root.title("🎲 Juego de Memoria")
+        self.root.title("Juego de Memoria")
         self.root.geometry("600x600")
         self.root.configure(bg="#2e2e2e")
 
