@@ -98,7 +98,7 @@ def aplicar_tema():
 
 # ---------------- INTERFAZ ----------------
 root = tk.Tk()
-root.title("🌐 Conversor Universal de Unidades")
+root.title("Conversor Universal de Unidades")
 root.geometry("520x600")
 
 style = ttk.Style()
@@ -107,9 +107,9 @@ style.configure("TButton", padding=6, font=("Arial", 10))
 style.configure("TNotebook", background="#f5f5f5")
 
 # Botones globales
-tk.Button(root, text="🌗 Tema Claro/Oscuro", command=cambiar_tema).pack(pady=5)
-tk.Button(root, text="🕘 Ver Historial", command=mostrar_historial).pack(pady=5)
-tk.Button(root, text="📄 Exportar Historial", command=exportar_historial).pack(pady=5)
+tk.Button(root, text="Tema Claro/Oscuro", command=cambiar_tema).pack(pady=5)
+tk.Button(root, text="Ver Historial", command=mostrar_historial).pack(pady=5)
+tk.Button(root, text="Exportar Historial", command=exportar_historial).pack(pady=5)
 
 notebook = ttk.Notebook(root)
 notebook.pack(pady=10, expand=True)
