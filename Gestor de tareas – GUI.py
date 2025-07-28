@@ -134,15 +134,15 @@ tk.OptionMenu(root, tiempo_var, "Indefinido", "5 min", "10 min", "30 min", "1 ho
 importancia_var = tk.StringVar(value="Media")
 tk.OptionMenu(root, importancia_var, "Alta", "Media", "Baja").grid(row=0, column=2)
 
-btn_add = tk.Button(root, text="➕ Agregar Tarea", command=agregar_tarea, font=("Arial", 12))
+btn_add = tk.Button(root, text="Agregar Tarea", command=agregar_tarea, font=("Arial", 12))
 btn_add.grid(row=0, column=3, padx=10)
 
-btn_tema = tk.Button(root, text="🌗 Cambiar Tema", command=cambiar_tema, font=("Arial", 12))
+btn_tema = tk.Button(root, text="Cambiar Tema", command=cambiar_tema, font=("Arial", 12))
 btn_tema.grid(row=0, column=4, padx=10)
 
 # Tablero Kanban
-tk.Label(root, text="📋 Pendientes", font=("Arial", 14, "bold")).grid(row=1, column=0, columnspan=2)
-tk.Label(root, text="✅ Realizadas", font=("Arial", 14, "bold")).grid(row=1, column=2, columnspan=2)
+tk.Label(root, text="Pendientes", font=("Arial", 14, "bold")).grid(row=1, column=0, columnspan=2)
+tk.Label(root, text="Realizadas", font=("Arial", 14, "bold")).grid(row=1, column=2, columnspan=2)
 
 cols = ("Tarea", "Tiempo", "Importancia")
 tree_pendientes = ttk.Treeview(root, columns=cols, show='headings', height=20)
@@ -150,10 +150,10 @@ for c in cols:
     tree_pendientes.heading(c, text=c)
 tree_pendientes.grid(row=2, column=0, columnspan=2, padx=10)
 
-btn_done = tk.Button(root, text="✔ Marcar como Realizada", command=lambda: marcar_completada(tree_pendientes))
+btn_done = tk.Button(root, text="Marcar como Realizada", command=lambda: marcar_completada(tree_pendientes))
 btn_done.grid(row=3, column=0, pady=5)
 
-btn_del = tk.Button(root, text="🗑 Eliminar", command=lambda: eliminar_tarea(tree_pendientes))
+btn_del = tk.Button(root, text="Eliminar", command=lambda: eliminar_tarea(tree_pendientes))
 btn_del.grid(row=3, column=1, pady=5)
 
 tree_realizadas = ttk.Treeview(root, columns=cols, show='headings', height=20)
