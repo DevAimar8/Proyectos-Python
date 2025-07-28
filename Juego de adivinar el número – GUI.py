@@ -61,4 +61,4 @@ tk.Label(root, textvariable=mensaje, font=("Arial", 13), wraplength=350, bg="#2e
 boton_reiniciar = tk.Button(root, text="🔄 Reiniciar juego", font=("Arial", 11), bg="#2196f3", fg="white",
                             activebackground="#1976d2", command=reiniciar)
 
-root.mainloop()
+root.mainloop() 
