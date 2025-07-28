@@ -55,7 +55,7 @@ class MemoryGame:
             self.botones[j].config(bg="#388e3c")
             self.pares_encontrados += 1
             if self.pares_encontrados == 8:
-                self.estado.config(text="🎉 ¡Ganaste! Has encontrado todos los pares")
+                self.estado.config(text="¡Ganaste! Has encontrado todos los pares")
         else:
             self.botones[i].config(text="", bg="#455a64")
             self.botones[j].config(text="", bg="#455a64")
