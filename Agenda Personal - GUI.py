@@ -77,7 +77,7 @@ def aplicar_tema():
 
 # ---------------- INTERFAZ ----------------
 root = tk.Tk()
-root.title("🗓️ Agenda Diaria")
+root.title("🗓Agenda Diaria")
 root.geometry("500x600")
 
 tema_actual = "oscuro"
@@ -96,7 +96,7 @@ tk.Entry(root, textvariable=titulo_var, font=("Arial", 12), width=30).pack(pady=
 tk.Entry(root, textvariable=hora_var, font=("Arial", 12), width=15).pack(pady=5)
 tk.Button(root, text="Agregar Evento", command=agregar_evento).pack(pady=5)
 tk.Button(root, text="Marcar como Completado", command=marcar_completado).pack(pady=5)
-tk.Button(root, text="🌗 Cambiar Tema", command=cambiar_tema).pack(pady=5)
+tk.Button(root, text="Cambiar Tema", command=cambiar_tema).pack(pady=5)
 
 # Lista eventos del día
 tk.Label(root, text="Eventos de Hoy", font=("Arial", 14, "bold")).pack(pady=10)
