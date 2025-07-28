@@ -98,8 +98,8 @@ tree.pack(pady=10, fill="both", expand=True)
 # Botones de acción
 frame = tk.Frame(root, bg="#2e2e2e")
 frame.pack(pady=5)
-tk.Button(frame, text="🗑 Eliminar", command=eliminar, bg="#f44336", fg="white").pack(side="left", padx=5)
-tk.Button(frame, text="📋 Copiar Contraseña", command=copiar_contrasena, bg="#2196f3", fg="white").pack(side="left", padx=5)
+tk.Button(frame, text="Eliminar", command=eliminar, bg="#f44336", fg="white").pack(side="left", padx=5)
+tk.Button(frame, text="Copiar Contraseña", command=copiar_contrasena, bg="#2196f3", fg="white").pack(side="left", padx=5)
 
 # Inicialización
 datos = cargar_datos()
