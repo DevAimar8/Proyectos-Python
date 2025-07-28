@@ -12,16 +12,16 @@ def verificar():
         intento = int(entry.get())
         intentos += 1
         if intento < numero_secreto:
-            mensaje.set("📉 Muy bajo. Intenta de nuevo.")
+            mensaje.set("Muy bajo. Intenta de nuevo.")
         elif intento > numero_secreto:
-            mensaje.set("📈 Muy alto. Intenta de nuevo.")
+            mensaje.set("Muy alto. Intenta de nuevo.")
         else:
-            mensaje.set(f"🎉 ¡Correcto! Lo adivinaste en {intentos} intentos.")
+            mensaje.set(f"¡Correcto! Lo adivinaste en {intentos} intentos.")
             entry.config(state="disabled")
             boton_verificar.config(state="disabled")
             boton_reiniciar.pack(pady=10)
     except ValueError:
-        mensaje.set("❌ Por favor, ingresa un número válido.")
+        mensaje.set("Por favor, ingresa un número válido.")
 
 # Función para reiniciar el juego
 def reiniciar():
@@ -42,7 +42,7 @@ root.configure(bg="#2e2e2e")
 root.resizable(False, False)
 
 # Título
-tk.Label(root, text="🎯 Adivina el Número", font=("Arial", 20, "bold"), bg="#2e2e2e", fg="white").pack(pady=20)
+tk.Label(root, text="Adivina el Número", font=("Arial", 20, "bold"), bg="#2e2e2e", fg="white").pack(pady=20)
 
 # Entrada
 entry = tk.Entry(root, font=("Arial", 16), justify="center", width=10, bd=0, bg="#1e1e1e", fg="white")
@@ -54,11 +54,11 @@ boton_verificar = tk.Button(root, text="Verificar", font=("Arial", 12), bg="#4ca
 boton_verificar.pack(pady=10)
 
 # Mensaje dinámico
-mensaje = tk.StringVar(value="🔢 Adivina un número del 1 al 100")
+mensaje = tk.StringVar(value="Adivina un número del 1 al 100")
 tk.Label(root, textvariable=mensaje, font=("Arial", 13), wraplength=350, bg="#2e2e2e", fg="white").pack(pady=10)
 
 # Botón reiniciar (oculto al inicio)
-boton_reiniciar = tk.Button(root, text="🔄 Reiniciar juego", font=("Arial", 11), bg="#2196f3", fg="white",
+boton_reiniciar = tk.Button(root, text="Reiniciar juego", font=("Arial", 11), bg="#2196f3", fg="white",
                             activebackground="#1976d2", command=reiniciar)
 
 root.mainloop() 
