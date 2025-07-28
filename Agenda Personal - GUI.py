@@ -106,6 +106,6 @@ lista.pack(pady=10)
 # Cargar y ejecutar
 eventos = cargar_eventos()
 aplicar_tema()
-actualizar_lista()
+actualizar_lista() 
 notificar_eventos()
 root.mainloop()
